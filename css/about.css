@@ -1,0 +1,201 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+
+.about-page {
+
+    padding: 160px 45px 100px;
+
+}
+
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+
+.about-intro {
+
+    display:grid;
+
+    grid-template-columns:1fr 2fr;
+
+    gap:40px;
+
+    max-width:1200px;
+
+}
+
+
+.about-label {
+
+    font-size:12px;
+
+    letter-spacing:.02em;
+
+    opacity:.55;
+
+}
+
+
+.about-content {
+
+    max-width:760px;
+
+}
+
+
+.about-content h1 {
+
+    margin:0;
+
+    font-size:clamp(42px, 7vw, 92px);
+
+    font-weight:400;
+
+    letter-spacing:-.06em;
+
+    line-height:.9;
+
+}
+
+
+.about-role {
+
+    margin-top:14px;
+
+    font-size:14px;
+
+    letter-spacing:.02em;
+
+    opacity:.55;
+
+}
+
+
+.about-text {
+
+    margin-top:60px;
+    max-width:800px;
+ text-align:justify;
+
+}
+
+
+.about-text p {
+
+    margin:0;
+
+    font-size:16px;
+
+    line-height:1.50;
+
+    font-weight:300;
+
+}
+
+
+.about-text p + p {
+
+    margin-top:28px;
+
+}
+
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+
+.about-details {
+
+    margin-top:150px;
+
+    padding-top:25px;
+
+    border-top:1px solid rgba(0,0,0,.15);
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+    max-width:1200px;
+
+}
+
+
+.detail span {
+
+    display:block;
+
+    font-size:12px;
+
+    opacity:.5;
+
+}
+
+
+.detail p {
+
+    margin-top:8px;
+
+    font-size:14px;
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+
+@media(max-width:800px) {
+
+
+    .about-page {
+
+        padding:120px 25px 70px;
+
+    }
+
+
+    .about-intro {
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+
+    }
+
+
+    .about-text {
+
+        margin-top:60px;
+
+    }
+
+
+    .about-text p {
+
+        font-size:16px;
+
+    }
+
+
+    .about-details {
+
+        margin-top:100px;
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+    }
+
+}

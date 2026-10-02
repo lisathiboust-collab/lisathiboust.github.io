@@ -1,0 +1,544 @@
+/* =========================================
+   PROJECT PAGE
+========================================= */
+
+
+.project-page {
+
+    padding:140px 45px 100px;
+
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+
+.project-header {
+
+    max-width:1200px;
+
+    margin-bottom:60px;
+
+}
+
+
+.project-category {
+
+    margin:0 0 15px;
+
+    font-size:12px;
+
+    letter-spacing:.02em;
+
+    opacity:.5;
+
+}
+
+
+.project-header h1 {
+
+    margin:0;
+
+    font-size:clamp(42px, 5vw, 68px);
+
+    font-weight:400;
+
+    letter-spacing:-.05em;
+
+    line-height:.95;
+
+}
+
+
+
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.project-video {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    aspect-ratio: 16 / 9;
+
+    margin: 0 auto 70px;
+
+}
+
+.project-video iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+
+}
+
+.video-placeholder {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #F8F5EE;
+
+    font-size: 11px;
+
+    letter-spacing: .08em;
+
+    opacity: .35;
+
+}
+
+/* =========================================
+   GALLERY
+========================================= */
+
+
+.project-gallery {
+
+    width:100%;
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4, 1fr);
+
+    gap:5px;
+
+}
+
+
+.gallery-image {
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    cursor:pointer;
+
+    transition:opacity .25s ease;
+
+}
+
+
+.gallery-image:hover {
+
+    opacity:.75;
+
+}
+
+
+.project-description {
+
+    max-width: 1200px;
+
+    margin: -25px 0 60px;
+
+}
+
+.project-description p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    opacity: .6;
+
+}
+
+
+
+/* =========================================
+   CREDITS
+========================================= */
+
+
+.project-credits {
+
+    margin-top:120px;
+
+    padding-top:25px;
+
+    border-top:1px solid rgba(0,0,0,.15);
+
+    max-width:1000px;
+
+}
+
+
+.credits-title {
+
+    margin:0 0 45px;
+
+    font-size:12px;
+
+    opacity:.5;
+
+}
+
+
+.credits-list {
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:40px;
+
+}
+
+
+.credit span {
+
+    display:block;
+
+    font-size:11px;
+
+    opacity:.5;
+
+}
+
+
+.credit p {
+
+    margin:8px 0 0;
+
+    font-size:14px;
+
+}
+
+
+
+/* =========================================
+   BACK TO COLOR GRADING
+========================================= */
+
+
+.back-to-color-grading {
+
+    display:inline-block;
+
+    margin-top:100px;
+
+    color:inherit;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    opacity:.55;
+
+    transition:opacity .25s ease;
+
+}
+
+
+.back-to-work:hover {
+
+    opacity:1;
+
+}
+
+
+
+/* =========================================
+   LIGHTBOX
+========================================= */
+
+
+.lightbox {
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:1000;
+
+    background:rgba(0,0,0,.94);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease;
+
+}
+
+
+.lightbox.active {
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+.lightbox-content {
+
+    position:relative;
+
+    max-width:90vw;
+
+    max-height:90vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+#lightbox-image {
+
+    max-width:90vw;
+
+    max-height:85vh;
+
+    width:auto;
+
+    height:auto;
+
+    display:block;
+
+    object-fit:contain;
+
+}
+
+
+#lightbox-counter {
+
+    margin:15px 0 0;
+
+    color:#F8F5EE;
+
+    font-size:12px;
+
+    opacity:.55;
+
+}
+
+
+
+/* =========================================
+   LIGHTBOX BUTTONS
+========================================= */
+
+
+.lightbox button {
+
+    position:absolute;
+
+    z-index:2;
+
+    border:0;
+
+    background:none;
+
+    color:#F8F5EE;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    opacity:.65;
+
+    transition:opacity .25s ease;
+
+}
+
+
+.lightbox button:hover {
+
+    opacity:1;
+
+}
+
+
+.lightbox-close {
+
+    top:25px;
+
+    right:35px;
+
+    font-size:30px;
+
+    font-weight:300;
+
+}
+
+
+.lightbox-prev {
+
+    left:30px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:25px;
+
+}
+
+
+.lightbox-next {
+
+    right:30px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:25px;
+
+}
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+
+@media(max-width:900px) {
+
+
+    .project-page {
+
+        padding:120px 30px 80px;
+
+    }
+
+
+    .project-gallery {
+
+        grid-template-columns:repeat(2, 1fr);
+
+    }
+
+
+    .credits-list {
+
+        grid-template-columns:repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+
+@media(max-width:600px) {
+
+
+    .project-page {
+
+        padding:110px 20px 60px;
+
+    }
+
+
+    .project-header {
+
+        margin-bottom:45px;
+
+    }
+
+
+    .project-header h1 {
+
+        font-size:44px;
+
+    }
+
+
+    .project-gallery {
+
+        grid-template-columns:1fr;
+
+        gap:4px;
+
+    }
+
+
+    .credits-list {
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+    }
+
+
+    .project-credits {
+
+        margin-top:80px;
+
+    }
+
+
+    .back-to-work {
+
+        margin-top:70px;
+
+    }
+
+
+    .lightbox-prev {
+
+        left:10px;
+
+    }
+
+
+    .lightbox-next {
+
+        right:10px;
+
+    }
+
+
+    .lightbox-close {
+
+        top:15px;
+
+        right:20px;
+
+    }
+
+}
